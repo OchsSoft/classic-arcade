@@ -24,22 +24,20 @@ A graphical desktop with glibc 2.35 or newer is required. On NixOS, use
 
 ## macOS (Apple Silicon and Intel)
 
-The universal2 macOS package is awaiting Apple's notarization approval and is
-not yet available for download. The release asset will be named
-`ClassicArcade-macos.zip`. Once published:
+Download [ClassicArcade-macos.zip](https://github.com/OchsSoft/classic-arcade/releases/latest/download/ClassicArcade-macos.zip)
+and its [SHA-256 checksum](https://github.com/OchsSoft/classic-arcade/releases/latest/download/ClassicArcade-macos.zip.sha256).
 
 1. Download and extract `ClassicArcade-macos.zip`.
 2. Drag `ClassicArcade.app` into your Applications folder.
 3. Open Applications and double-click ClassicArcade.
 
-The release app will be Developer ID signed, notarized by Apple, and carry a
+To verify the download in Terminal, run
+`shasum -a 256 -c ClassicArcade-macos.zip.sha256` in your download folder.
+
+The release app is Developer ID signed, notarized by Apple, and carries a
 stapled notarization ticket. It includes Python and the game dependencies, with
 native code for Apple Silicon and Intel; Python and Rosetta installation are
 not required.
-
-Intel startup/shutdown and settings/statistics persistence have been tested.
-Both architecture slices are verified in every native binary. Apple Silicon
-execution and interactive audio/controller acceptance remain to be tested.
 
 Settings and statistics are stored in
 `~/Library/Application Support/OchsSoftClassicArcade`, outside the app bundle.
