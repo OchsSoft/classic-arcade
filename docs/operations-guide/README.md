@@ -49,3 +49,5 @@ Edition 26 October 2026. Repository OchsSoft/classic-arcade. Inspected source re
 Source files: [README.md](https://github.com/OchsSoft/classic-arcade/blob/5b053cbe624052ea00becae94e34d5eeb43e948e/README.md).
 
 [Editable Word edition](Operations_Guide.docx) | [PDF edition](Operations_Guide.pdf)
+
+For architecture, code-level explanations, worked change recipes, and detailed recovery, use the [development handbook](../development-handbook/README.md).
